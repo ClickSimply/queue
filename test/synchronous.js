@@ -1,5 +1,5 @@
 var tape = require('tape')
-var queue = require('../')
+var queue = require('../').QueueTS
 
 tape('synchronous', function (t) {
   t.plan(4)

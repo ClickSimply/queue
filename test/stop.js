@@ -1,5 +1,5 @@
 var tape = require('tape')
-var queue = require('../')
+var queue = require('../').QueueTS
 
 tape('stop', function (t) {
   t.plan(6)
@@ -21,6 +21,7 @@ tape('stop', function (t) {
   })
 
   q.push(function (cb) {
+    
     t.equal(q.running, true)
     cb()
   })
@@ -28,6 +29,7 @@ tape('stop', function (t) {
   // start
   q.start(function (err) {
     t.error(err)
+    
     t.equal(q.running, false)
   })
 

@@ -16,7 +16,7 @@ This module exports a class `Queue` that implements most of the `Array` API. Pas
 ## Example
 `npm run example`
 ``` javascript
-var queue = require('../')
+var queue = require('../').QueueTS
 
 var q = queue()
 var results = []

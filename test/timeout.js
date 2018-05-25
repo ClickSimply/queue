@@ -1,5 +1,5 @@
 var tape = require('tape')
-var queue = require('../')
+var queue = require('../').QueueTS
 
 tape('timeout', function (t) {
   t.plan(4)

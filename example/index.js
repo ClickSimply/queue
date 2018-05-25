@@ -1,4 +1,4 @@
-var queue = require('../')
+var queue = require('../').QueueTS
 
 var q = queue()
 var results = []
